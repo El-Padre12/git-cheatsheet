@@ -38,7 +38,7 @@ git switch main           # branch names should always be lowercase seperated wi
 
 ### Merge
 ```bash
-git switch main     # always switch to main before merging
+git switch main     # always switch to main before merging - applies only to individual workflow
 git merge feature-name
 ```
 
@@ -52,7 +52,9 @@ git reset HEAD filename
 ```bash
 git remote add origin git@github.com:USER/REPO.git
 git push -u origin main
+
 # on feature branch locally push to feature-name to open a PR
+# the output of the command below should give you a link to open a PR in Github
 git push origin feature-name
 ```
 
